@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h1>🧠 Quiz Game</h1>
+
+    <div id="category-container">
+      <label for="category">📚 Choose Category:</label>
+      <select id="category">
+        <option value="general">General Knowledge</option>
+        <option value="tech">Technology</option>
+      </select>
+      <button id="start-btn">Start Quiz 🚀</button>
+    </div>
+
+    <div id="question-container" class="hidden">
+      <div class="header-row">
+        <div id="question-count"></div>
+        <div id="timer">⏱ Time left: <span id="time">15</span>s</div>
+      </div>
+      <h2 id="question">Question</h2>
+      <ul>
+        <li><button class="answer-btn" data-answer="a" id="a_text"></button></li>
+        <li><button class="answer-btn" data-answer="b" id="b_text"></button></li>
+        <li><button class="answer-btn" data-answer="c" id="c_text"></button></li>
+        <li><button class="answer-btn" data-answer="d" id="d_text"></button></li>
+      </ul>
+      <div id="result" class="hidden"></div>
+      <button id="next-btn">Next ➡️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
